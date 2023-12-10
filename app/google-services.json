@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1094898478983",
+    "project_id": "crud-app-63c9b",
+    "storage_bucket": "crud-app-63c9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094898478983:android:0d2149cb513c5e5759ad22",
+        "android_client_info": {
+          "package_name": "com.example.firebasedemoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3113LuubBtsJProzaldCqtGc6vdtFhcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

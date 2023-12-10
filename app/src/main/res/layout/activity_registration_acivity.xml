@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationAcivity"
+    android:background="@color/blue_shade1">
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/tilUserName"
+        android:hint="Enter User_Name"
+        style="@style/TextInputLayout"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+        
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUserName"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/white"
+            android:textColor="white"
+            android:textSize="14sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilUserName"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tilPassword"
+        android:hint="Enter Password"
+        style="@style/TextInputLayout"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:textColor="white"
+            android:textSize="14sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilPassword"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tilConPassword"
+        android:hint="Enter Confirm Password"
+        style="@style/TextInputLayout"
+        android:padding="5dp"
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtConPassword"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            android:textColor="white"
+            android:textSize="14sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/tilConPassword"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_button_back"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="white"
+        android:layout_below="@id/btnRegister"
+        android:text="Alread a User? LogIn here"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:id="@+id/txtAlreadyUser"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/prgRegistration"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress"
+        android:visibility="gone"
+        />
+    
+
+    
+    
+
+</RelativeLayout>
